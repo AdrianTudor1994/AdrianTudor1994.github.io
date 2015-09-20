@@ -1,0 +1,28 @@
+.aboutme-body {
+	
+}
+.hi-adrian {
+	font-size: 35px;
+	color:black;
+}
+
+.paragraph-container{
+	text-align: center; 
+	color: red;
+
+}
+
+li{
+	text-align: center;
+} 
+title{
+	font-size:20px;
+}
+body{
+	padding: 10px 200px 50px 200px;
+}
+h1{
+	border: 300px;
+	padding-top: .5px;
+}
+.aboutme-paragraph{
