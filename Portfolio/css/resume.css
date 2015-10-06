@@ -1,0 +1,51 @@
+body{
+background-color: gray;
+}
+
+.container-resume{
+background-color: white;
+width: 800px;
+margin: auto;
+padding: 50px;
+}
+.headline-main{
+	font-family: 'Anton', sans-serif;
+	text-align: center;
+	font-size: 50px;
+
+}
+.second-headline{
+	font-family: 'Anton', sans-serif;
+	text-align: center;
+}
+.contact{
+	font-family: 'Anton', sans-serif;
+text-align: center;
+list-style-type: none;
+}
+
+.headline-section{
+	font-family: 'Anton', sans-serif;
+font-size: 22px;
+color: #2671E1;
+}
+.header{
+	font-family: 'Anton', sans-serif;
+	background-color: #2671E1;
+}
+
+.photo{
+	width: 130px;
+	height: 200px;
+	margin-top: 20px;
+}
+
+.photo2{
+	width: 300px;
+	height: 100px;
+	margin-top: 20px;
+}
+
+.bullets{
+	font-family: 'Abel', sans-serif;
+}
