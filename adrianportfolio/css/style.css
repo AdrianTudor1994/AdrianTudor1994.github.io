@@ -449,3 +449,13 @@ body {
  width: 100%;
 }
 
+.evil{
+	width:400px;
+	height:400px;
+}	
+
+.imagecon{
+	width:50%;
+	margin:0 auto;
+}
+
