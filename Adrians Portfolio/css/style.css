@@ -1,0 +1,451 @@
+
+/*clearfix class */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*body styles*/
+
+body {
+	background-color: #efba84;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: 1em;
+}
+
+/*Media query which says when the screen 
+is at least 700px width, that's 700px or bigger, 
+make the background blue. */
+@media screen and (min-width: 700px) {
+	
+	body {
+		background-color: #f2f2f2;
+	}
+}
+
+/*Navigation*/
+.portfolio-navigation {
+	height: 50px;
+	background-color: #36a8dd; 
+}
+
+.navigation-item{
+	display: inline-block;
+
+}
+
+.navigation-menu{
+	text-align: center;
+	padding-top: 20px;
+}
+
+.navigation-link{
+	padding: 0 20px;
+	text-decoration: none;
+	color: #000000;
+	transistion: color 1s;
+}
+
+.navigation-link:hover{
+	color: #f1f5f7;
+}
+
+.is-active {
+	border-bottom: 5px solid white;
+}
+
+
+
+/*Defining the container widths */
+
+/*Because we're designing for mobile first,
+we'll start off with a container width of 240px and 
+used media queries to increase the size */
+.main-container {
+	background-color: white;
+	width: 240px;
+	height: 500px;
+	margin: auto;
+}
+
+/*Here's our media querie which tells the browser that when
+the screen is at least 480px (which is 480px or higher) made
+the main container take up 80% of the screen.
+
+Because our browser could get REALLY wide and we don't want
+it to take up 80% in those situations, we've set a limit to
+how wide the container can be using the max-width property*/
+@media screen and (min-width: 480px) {
+	.main-container {
+		width:80%;
+		max-width: 1000px;
+	}
+}
+
+hr {
+	color: red;
+	opacity: .6;
+}
+
+.headline-main {
+	font-size: 36px;
+	font-weight: 700;
+	padding: 20px 0px;
+}
+
+.headline-section {
+	padding: 5px 0;
+
+}
+
+.contact-link {
+	display: none;
+	text-decoration: none;
+	color: #b8b8b8;
+}
+
+@media screen and (min-width: 520px) {
+	.contact-link {
+		display: block;
+	}
+}
+
+.contact-link:hover {
+	color: #333333;
+}
+
+.headline-section {
+	font-size: 22px;
+	border-bottom:2px solid #d2d2d2;
+}
+
+/*Here we're hiding the resume-section initially because
+we don't want it to show up on mobile.*/
+.resume-section {
+	display: none;
+}
+
+/*Now we've .*/
+@media screen and (min-width: 430px) {
+	.resume-section {
+		display: block;
+	}
+}
+
+.nametitle{
+	font-size: 25px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px;
+
+}
+.nametitle{
+	font-size: 25px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px;
+}
+
+.index {
+margin: 0 auto;
+width: 800px;
+padding: 0;
+
+}
+
+.index{
+margin: 0 auto;
+width: 60%;
+display: inline-block;
+}
+
+.mainimage{
+	margin: 0 auto;
+	width: 30%;
+	float: left;
+	padding: 0px 50px;
+
+}
+
+.paragraph{
+	margin: 0 auto;
+	padding: 10px 50px;
+
+}
+
+.bio{
+	margin: 0 auto;
+	width: 50%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 15px;
+	float: left;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #e5e5e5;
+}
+
+.gallery {
+  width: 700px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  display: block;
+  width: 200px;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.7,1.7);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+	box-sizing: border-box;
+}
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+html,
+body{
+	min-height: 100%;
+}
+body{
+	background-image: radial-gradient(mintcream 0%, lightgray 100%);
+}
+h1{
+	display: table;
+	margin: 5% auto 0;
+	text-transform: uppercase;
+	font-family: 'Anaheim', sans-serif;
+	font-size: 4em;
+	font-weight: 400;
+	text-shadow: 0 1px white, 0 2px black;
+}
+.container{
+	margin: 4% auto;
+	width: 210px;
+	height: 140px;
+	position: relative;
+	perspective: 1000px;
+}
+#carousel{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	animation: rotation 20s infinite linear;
+}
+#carousel:hover{
+	animation-play-state: paused;
+}
+#carousel figure{
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	left: 10px;
+	top: 10px;
+	background: black;
+	overflow: hidden;
+	border: solid 5px black;
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(288px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
+
+img{
+	-webkit-filter: grayscale(1);
+	cursor: pointer;
+	transition: all .5s ease;
+}
+img:hover{
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+}
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(360deg);
+	}
+}
+
+}
+a{cursor:pointer;}
+
+/*Gallery Container*/
+.image-gallery{
+  position:relative;  
+  margin:0 auto;
+  width:600px;  
+  border-radius:20px;  
+}
+/*Sets Big Image style*/
+.image-gallery .big-image{
+  width:600px;
+  height:360px;   
+  margin:0 auto;  
+  position:relative;
+}
+.image-gallery .big-image img{
+  opacity:0;position:absolute;left:0px;top:0px; width:600px;
+  margin:0 auto;
+  transition: opacity 350ms;
+  box-shadow:0 1px 20px 1px rgba(0,0,0,0.7);
+}
+
+/*Selected image display*/
+.image-gallery .big-image img:target{opacity:1;}
+/*on select image display none the default image*/
+.image-gallery .big-image img:target ~ img#default{opacity:0;}
+
+/*Show Default Image in first load*/
+.image-gallery .big-image img#default{opacity:1;}
+
+
+/***Button***/
+.image-gallery .button{
+  font-weight:bold;
+  font-size:30px;
+  display:inline-block;
+  transform:scale(1,2);
+  background-color:#ccc;
+  color:#222;
+  padding:0 10px;   
+}
+.image-gallery .prev{position:absolute; left:0; top:378px;}
+.image-gallery .next{position:absolute; right:0; top:378px;}
+
+/***move thumbs on click on buttons***/
+.image-gallery .prev:active ~ .thumbs  ul{
+  transform:translateX(0%);
+  transition:3s all;
+}
+.image-gallery  .next:active ~ .thumbs  ul{
+  transform:translateX(-90%);
+  transition:3s all;  
+}
+  
+/***thumbs***/
+.image-gallery .thumbs{
+  overflow:hidden; white-space:nowrap; margin:0 45px;
+}
+.image-gallery .thumbs ul{
+  float:left; transition:999999s all; transform:translateX(0);
+}
+.image-gallery .thumbs li{display:inline-block; margin-right:3px;}
+.image-gallery .thumbs li a:hover{opacity:1;}
+.image-gallery .thumbs li a{opacity:0.85;}
+.image-gallery .thumbs li a:focus{opacity:1;}
+.image-gallery .thumbs li img{width:128px;}
+
+
+/*other styles*/
+.title{font-size:30px;font-weight:bold;text-align:center;margin:15px 0;
+text-shadow:1px 1px 2px #1f1f1f;}
+
+/*reset CSS*/
+*{font-family:arial;}
+ul,li{list-style:none;margin:0;padding:0;}
+
+/*footer text*/
+footer{position:fixed; left:0; bottom:0;}
+footer a{color:#222; font-weight:bold; font-size:22px;}
+
+body {
+  background-color: #DBD9D4;
+  width: 100%;
+  display:block;
+}
+#wrap {
+  width:100%;
+  background-color:white;
+  position: relative;
+  overflow:hidden;
+  box-shadow: 0px 0px 5px #A2A2A2;
+}
+#gallery {
+ padding: 2em 0;
+ margin: 0 auto;
+ width: 50%;
+ list-style: none;
+ height: 100%;
+ overflow: hidden;
+}
+
+#gallery li {
+ float: left;
+ width: 30%;
+ margin: 0 10px 10px 0;
+ 
+}
+
+#gallery li a {
+ float: left;
+ width: 100%;
+ display: block;
+}
+
+#gallery li a img {
+ display: block;
+ width: 100%;
+}
+
